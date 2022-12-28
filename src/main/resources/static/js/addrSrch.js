@@ -1,6 +1,7 @@
 let addressList = [];
 
 let addressListUl = document.getElementById("addressList");
+
 // 검색 주소 추가
 $(document).on("click", "#add", () => {
     let addressElement = document.getElementById("address");

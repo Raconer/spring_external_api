@@ -18,8 +18,14 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class MainRestController {
 
+    // 주소 검색 Service
     SearchService searchService;
 
+    /**
+     * @param addrList
+     * @return
+     * @Desc : 문자열에서 도로명 주소를 찾는 API
+     */
     @PostMapping
     public ResponseEntity<?> search(@RequestBody String[] addrList) {
         List<FindLoad> findLoads = this.searchService.findLoadByAddrList(addrList);
