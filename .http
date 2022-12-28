@@ -1,0 +1,2 @@
+GET https://dapi.kakao.com/v2/local/search/address.json?query='성남시 분당구 백현로 265'&analyze_type=exact&page=1&size=1
+Authorization: KakaoAK 6096a51f2a7c26886ba4f8186f4a8b68
