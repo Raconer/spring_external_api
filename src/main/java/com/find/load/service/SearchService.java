@@ -39,7 +39,7 @@ public class SearchService {
     String apiUrl;
 
     // 도로명 주소 가져오는 Regex
-    final String LOAD_REGEX = "([\s0-9가-힣A-Za-z\\·\\~\\.\\-]+(로|길).[0-9]*)";
+    final String LOAD_REGEX = "[가-힣A-Za-z0-9\\·\\~\\.\\-\\s]{2,}(로|길).[0-9]?";
     // 도로명 주소를 검색 하니 Regex와 Pattern을 final로 고정 시킵니다.
     final Pattern loadPtr = Pattern.compile(LOAD_REGEX);
 
